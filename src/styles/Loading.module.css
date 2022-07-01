@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.item {
+  aspect-ratio: 1/1;
+  background-color: #262626;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

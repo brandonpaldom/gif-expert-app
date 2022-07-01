@@ -1,0 +1,11 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 4rem;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 1.5rem;
+}
