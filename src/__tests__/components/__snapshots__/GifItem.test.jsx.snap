@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifItem Debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-2"
+  >
+    <img
+      alt="Gif title"
+      src="https://media.giphy.com/media/3o7TKsQ8gqVrXQrjWM/giphy.gif"
+    />
+    <p
+      class="text-[0.75rem] text-neutral-600"
+    >
+      Gif title
+    </p>
+  </div>
+</div>
+`;

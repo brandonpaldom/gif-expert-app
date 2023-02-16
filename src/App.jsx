@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { AddNewCategory, Footer, GifGrid, Header } from './components';
+import { useState } from 'react'
+import { AddNewCategory, Footer, GifGrid, Header } from './components'
 
 export default function App() {
-  const [categoryList, setCategoryList] = useState(['fortnite']);
+  const [categoryList, setCategoryList] = useState(['fortnite'])
 
   function handleAddNewCategory(newCategory) {
-    if (categoryList.includes(newCategory)) return;
-    setCategoryList([newCategory, ...categoryList]);
+    if (categoryList.includes(newCategory)) return
+    setCategoryList([newCategory, ...categoryList])
   }
 
   return (
@@ -22,5 +22,5 @@ export default function App() {
       </main>
       <Footer />
     </>
-  );
+  )
 }
